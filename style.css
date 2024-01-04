@@ -17,15 +17,16 @@
     color: white;
     background-color: rgb(255, 106, 0);
 }
-input{
-    width: 369px;
+input {
     height: 45px;
     border-radius: 28px;
     border: none;
     outline: none;
     background-color: lightgray;
-    padding-left: 20px
-}
+    padding-left: 61px;
+    padding-right: 127px;
+    text-align: start;
+  }
 ul li{
     list-style: none;
     font-size: 17px;
