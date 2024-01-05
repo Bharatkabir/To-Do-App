@@ -1,19 +1,17 @@
-
-.card {
+.card{
     width: 25rem;
     margin: 70px auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-
-.card-title {
+.card-title{
     margin-bottom: 15px;
 }
-
-
-.input button {
+.input{
+    margin-left: 25px;
+}
+.input button{
     position: absolute;
-    right: 13px;
+    right: 30px;
     top: 55px;
     border-radius: 26px;
     height: 45px;
@@ -22,19 +20,17 @@
     color: white;
     background-color: rgb(255, 106, 0);
 }
-
-input {
+.input input{
     height: 45px;
     border-radius: 28px;
     border: none;
     outline: none;
     background-color: lightgray;
-    padding-left: 61px;
-    padding-right: 127px;
+    padding-left: 17px;
+    padding-right: 81px;
     text-align: start;
-}
-
-ul li {
+  }
+ul li{
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -42,8 +38,7 @@ ul li {
     cursor: pointer;
     position: relative;
 }
-
-ul li::before {
+ul li::before{
     content: '';
     position: absolute;
     height: 28px;
@@ -55,19 +50,18 @@ ul li::before {
     top: 12px;
     left: 8px;
 }
-
-ul li.checked {
+ 
+ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
-
-ul li.checked::before {
+ul li.checked::before{
     background-image: url(checked.png);
 }
 
-ul li span {
+ul li span{
     position: absolute;
-    right: 0;
+    right: 0;;
     top: 5;
     width: 40px;
     font-size: 22px;
@@ -76,11 +70,9 @@ ul li span {
     text-align: center;
     border-radius: 50%;
 }
-
-ul li span:hover {
+ul li span:hover{
     background-color: #edeef0;
 }
-
 @media (max-width: 768px) {
     .card {
         width: 90%;
@@ -89,15 +81,11 @@ ul li span:hover {
 
     .input button {
         position: static;
-        width: 100%;
+        width: 86%;
         margin-top: 15px;
     }
 
     input {
-        width: 100%;
-    }
-
-    ul li {
-        padding: 12px 8px;
-    }
+        width: calc(100% - 62px)
+       }
 }
